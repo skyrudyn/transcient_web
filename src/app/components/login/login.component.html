@@ -1,0 +1,26 @@
+
+<div class="container">
+    <div class="login-page">
+        <div class="col-md-5 push-md-5" style="margin-top:0%;margin-left:20%">
+            <!-- <img src="assets/images/logo.png" width="150px;" style="display: block;margin: 0 auto;" class="user-avatar" /> -->
+            <h1 style="text-align: center;">Sign In</h1>
+            <hr/>
+            <form role="form">
+                <div class="form-content">
+                    <div class="form-group">
+                        <input type="text" #username ng-model="name" class="form-control input-underline input-lg" id="" placeholder="Email">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" #password class="form-control input-underline input-lg" id="" placeholder="Password">
+                    </div>
+                </div>
+                <div style="text-align:center">
+                <button class="btn btn-primary " (click)="onLoggedin(username.value,password.value)"> Log in </button>
+                
+                <button class="btn btn-primary " [routerLink]="['/signup']">Register</button>
+            </div>
+            </form>
+        </div>
+    </div>
+</div>

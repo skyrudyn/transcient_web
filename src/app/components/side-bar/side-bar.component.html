@@ -1,0 +1,15 @@
+<div class="w3-sidebar w3-bar-block w3-light-grey w3-card" style="width:240px" *ngIf="loggedIn">
+    <h5 class="w3-bar-item">{{hotelName}}</h5>
+    <button class="w3-bar-item w3-button tablink" (click)="goto(1)">Dashboard</button>
+    <button class="w3-bar-item w3-button tablink" (click)="goto(2)">Event</button>
+    <button class="w3-bar-item w3-button tablink" (click)="goto(9)">Staff Management</button>
+    <button class="w3-bar-item w3-button tablink" (click)="goto(3)">Applications</button>
+    <button class="w3-bar-item w3-button tablink" (click)="goto(4)">Rating</button>
+  </div>
+  <div class="w3-sidebar w3-bar-block w3-light-grey w3-card" style="width:240px" *ngIf="!loggedIn">
+    <h5 class="w3-bar-item">{{hotelName}}</h5>
+    <button class="w3-bar-item w3-button tablink" (click)="goto(5)">Sign In</button>
+    <button class="w3-bar-item w3-button tablink" (click)="goto(6)">Sign Up</button>
+    <button class="w3-bar-item w3-button tablink" (click)="goto(7)">About Us</button>
+    <button class="w3-bar-item w3-button tablink" (click)="goto(8)">Contact</button>
+  </div>

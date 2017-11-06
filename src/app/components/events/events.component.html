@@ -1,0 +1,14 @@
+<div style="width:80%">
+  <div class="row">
+    <div class="col-md-7">
+      <h1>List of available events</h1>
+    </div>
+    <div class="col-md-5" style="margin-top:5%;margin-bottom:2%">
+      <button style="float:right" (click)="create()">Create New Event</button>
+    </div>
+  </div>
+  <div class="list-group">
+    <a href="#" *ngFor="let events of events" class="list-group-item">Event Name : {{events.eventName}}     
+      <br/>Event Location : {{events.eventLocation}} </a>
+  </div>
+</div>

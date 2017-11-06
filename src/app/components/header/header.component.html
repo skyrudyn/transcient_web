@@ -1,0 +1,10 @@
+<nav class="navbar navbar-inverse" style="width:110%;margin-left:-10%">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav navbar-right">
+      <li *ngIf="showLogout">
+        <a (click)="logout()">
+          <span class="glyphicon glyphicon-log-out"></span> Logout</a>
+      </li>
+    </ul>
+  </div>
+</nav>
